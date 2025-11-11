@@ -3,6 +3,7 @@
 
 GevalTest2: LLM evaluation Test 재현을 위한 파이썬 스크립트
 아래는 LLM evaluation을 다른 GPT 서비스에 재현하기 앞서 제공되는 요약문
+재현을 위한 반복 테스트 시 척도변환에 따른 동점 간 순위변화는 있으나 전체 결과는 일치하였으며, 파이썬 스크립트에 결과에 영향을 미치지 않는 것으로 발견된 수식들은 제거됨 (결과는 동일)   
 
 ★ Overview 
 Evaluate N anonymised TXT files using five creativity-related metrics and convert raw values to a 5-point Likert scale with robust (P5–P95) min–max scaling. Designed for reproducible quantitative text evaluation. 
