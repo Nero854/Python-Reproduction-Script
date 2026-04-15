@@ -60,7 +60,7 @@ for fp in paths:
     coherence = 0.5 if len(sents)<2 else np.mean([jaccard(set(re.findall(r'\w+',a.lower())),
                                                           set(re.findall(r'\w+',b.lower())))
                                                   for a,b in zip(sents,sents[1:])])
-    concept = sum(bool(re.search(p, txt)) for p in [r'모카',r'\b20\s*대|\b2[0-9]\s*세',r'여성|그녀'])/3  # 프롬프트 명령어 키워드 중심으로 입력
+    concept = sum(bool(re.search(p, txt)) for p in [r'모카',r'\b20\s*대|\b2[0-9]\s*세',r'여성|그녀'])/3  # 테스트하고자 하는프롬프트 명령어 키워드 중심으로 입력
     avg_sent_len = tc/len(sents) if sents else 0
     avg_word_len = sum(len(t) for t in toks)/tc if tc else 0
     complexity = (avg_sent_len/40 + avg_word_len/5)/2
