@@ -1,4 +1,4 @@
-# Python-Reproduction-Script
+# 유전변이 응용 캐릭터 생성 프롬프트 샘플 및 활용된 Geaval Test 검증 파이썬 도구
 논문별 코드 기록
 
 유전변이 응용 캐릭터 생성 응용 프롬프트 및 LLM evaluation Test 재현을 위한 파이썬 스크립트 (GevalTest2)
